@@ -10,7 +10,7 @@ The Base StarterKit for Twig requires the following PatternEngine:
 
 This StarterKit can be installed via the following command:
 
-    php core/console --starterkit --install visionpoint/starterkit-twig
+    php core/console --starterkit --install visionpointmarketing/pl_starterkit
 
 
 ## Edit Files
