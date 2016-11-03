@@ -1,0 +1,112 @@
+$dark_background:$color-1;
+$light_background:$color-2;
+$font_fam:'open_sans';
+$icon-size:20px;
+a{
+	&.skip{
+		position:absolute!important;
+		clip:rect(1px,1px,1px,1px);
+		overflow:hidden;
+		height:1px;
+		top:0;
+		left:0;
+		right:0;
+		margin:auto;
+		text-align:center;
+		background:$color-2;
+		color:$color-1;
+		&:focus,&:active{
+			position:static!important;
+			clip:auto;
+			overflow:visible;
+			height:auto;
+			z-index:3;
+		}
+	}
+	text-decoration:none;
+	&:hover{
+		text-decoration:underline;
+	}
+	&[href$=".pdf"]{
+		&:after{
+			content:'\f1c1';
+			font-family:FontAwesome;
+			color:#FF0000;
+			font-size:12px;
+			padding-left:5px;
+			text-shadow: 1px 1px 0px $black-tl;
+		}
+	}
+	&[href$=".docx"],
+	&[href$=".doc"]{
+		&:after{
+			content:'\f1c2';
+			font-family:FontAwesome;
+			color:#0005FF;
+			font-weight:bold;
+			font-size:12px;
+			padding-left:5px;
+			text-shadow: 1px 1px 0px $black-tl;
+		}
+	}
+	@include focus_styles();
+	&.btn{
+		@include floatblock(left,auto);
+		@include font($font_fam,16,$dark_background);
+		background:#eee;
+		padding: 15px 25px;
+		border:1px solid $gray;
+		border-radius:3px;
+		text-transform:uppercase;
+		&.dark{
+			background:$dark_background;
+			color:$light_background;
+			font-weight:bold;
+		}
+		&.light{
+			background:$light_background;
+			color:$dark_background;
+			font-weight:bold;
+		}
+		&.icon{
+			padding-left:45px;
+			position:relative;
+			span{
+				padding-right:10px;
+				font-size:$icon-size;
+				position:absolute;
+				left:$icon-size;
+				@include calc('top','50% - #{$icon-size/2}','50%');
+			}
+		}
+	}
+	&.read-more{
+		@include font($font_fam,16,$dark_background);
+		float:right;
+		width:auto;
+		@include arrow('after',inherit,inherit,'\f0da');
+		padding-right:20px;
+		z-index:2;
+		&:after{
+			right:10px;
+			left:auto;
+			top:2px;
+		}
+		&.button{
+			color:$light_background;
+			width:auto;
+			float:left;
+			padding-right:35px;
+		}
+	}
+	&.tag{
+		@include font($font_fam,16,$color-2);
+		border:1px solid $color-2;
+		padding:0 5px;
+		margin:0 5px;
+		&:hover{
+			background:$color-1;
+			color:$color-2;
+		}
+	}
+}

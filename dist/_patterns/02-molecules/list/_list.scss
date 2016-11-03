@@ -1,0 +1,12 @@
+
+ul,
+ol{
+	@include floatblock();
+	li{
+		@include font('open_sans',18,$c-default);
+		display:list-item;
+		*{
+			float:none;
+		}
+	}
+}

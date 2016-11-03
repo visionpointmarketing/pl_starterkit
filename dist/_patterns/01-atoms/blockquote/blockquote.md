@@ -1,0 +1,1 @@
+Prints a blockquote element inside blockquote tags. Try adding a "quotes" class using the "blockquote_class" attribute

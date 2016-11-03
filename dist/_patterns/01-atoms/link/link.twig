@@ -1,0 +1,3 @@
+<a href="{{ link_url|default('https://www.example.com') }}" {% if link_class %}class="{{ link_class }}{% if link_icon %} icon{% endif %}"{% endif %}>
+	{% if link_icon %} <span class="fa fa-{{ link_icon }}"></span>{% endif %}{{ link_text|default('lorem ipsum') }}
+</a>

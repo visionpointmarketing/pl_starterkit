@@ -1,0 +1,132 @@
+.card{
+	@include floatblock();
+	margin-bottom:40px;
+	h2{
+		@include font('open_sans',30,$color-1);
+		line-height:1;
+		margin:5px 0;
+		text-transform:none;
+		@include breakpoint($desk){
+			margin:0;
+		}
+	}
+	hr{
+		border:none;
+		border-bottom:1px solid $color-2;
+		position:relative;
+	}
+	.item{
+		overflow:hidden;
+		position:relative;
+		@include breakpoint($tab){
+			width:270px;
+			height:270px;
+			float:left;
+		}
+		img{
+			min-width:100%;
+			min-height:100%;
+			transition:all 0.4s ease;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			-webkit-transform: translateY(-50%) translateX(-50%);
+		}
+	}
+	.card-container{
+		display:block;
+		float:left;
+
+		@include breakpoint($tab){
+			padding:0 20px;
+			@include calc("width","100% - 270px",100%);
+		}
+
+		p{
+			@include font('open_sans_bold',16,$c-default);
+			a{
+				@include font('open_sans',18,$color-1);
+			}
+		}
+		> a{
+			@include font('open_sans',16,$color-1);
+			width:auto;
+			@include arrow('after',$color-1,14,"\f0da");
+			text-transform:uppercase;
+			margin:10px 0;
+		}
+		.twocol{
+			column-count:1;
+			@include breakpoint($tab){
+				column-count:2;
+			}
+		}
+	}
+	&.right{
+		.item{
+			float:right;
+		}
+	}
+	&.dark{
+		padding:20px;
+		background:$color-1;
+		h2{
+			color:$white;
+			font-weight:normal;
+		}
+		> .card-container{
+			p{
+				color:$white;
+			}
+			> a{
+				color:$color-2;
+				&:after{
+					color:$color-2;
+				}
+			}
+		}
+	}
+	&.light{
+		padding:20px;
+		background:$gray;
+		> .card-container{
+			h2{
+				@include font('open_sans',24,$color-1);
+				color:$color-1;
+				font-weight:normal;
+			}
+			p{
+				color:$c-default;
+			}
+			> a{
+				color:$color-1;
+				&:after{
+					color:$color-1;
+				}
+			}
+		}
+	}
+	&.wrap{
+		.item{
+			float:left;
+			padding-right:10px;
+		}
+		.card-container{
+			p{
+				display:inline;
+				float:none;
+			}
+		}
+	}
+	&:hover{
+		.item{
+			img{
+				@include breakpoint($tab){
+					-webkit-backface-visibility: hidden;
+					-webkit-transform: translateZ(0) scale(1.2, 1.2) translateY(-41.75%) translateX(-41.75%);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "card_component":"molecules-list",
+    "list_array":{
+      "1":{
+        "url":"#test1",
+        "name":"test1",
+        "type":"basic"
+      },
+      "2":{
+        "url":"#test2",
+        "name":"test2",
+        "type":"basic"
+      }
+    }
+}

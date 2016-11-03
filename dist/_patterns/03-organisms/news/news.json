@@ -1,0 +1,28 @@
+{
+  "news_title":"News Title",
+  "news_text":"Lorem Ipsum Dolor sit amet.",
+  "news_cats":{
+    "1":{
+      "name":"test",
+      "type":"atoms-link",
+      "type_attributes":{
+        "link_text":"Cat1"
+      }
+    },
+    "2":{
+      "name":"test 2",
+      "type":"atoms-link",
+      "type_attributes":{
+        "link_text":"Cat2"
+      }
+    },
+    "3":{
+      "name":"test 2",
+      "type":"atoms-link",
+      "type_attributes":{
+        "link_text":"Cat3"
+      }
+    }
+  }
+}
+

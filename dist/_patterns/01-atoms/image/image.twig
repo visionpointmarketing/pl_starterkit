@@ -1,0 +1,3 @@
+{% if image_type %}<div class="{{ image_type }}">{% endif %}
+	<img src="{{ image_src|default("../../images/placeholder-svg.php?wh=400x300&color=444&fill=ccc&font=Arial&size=20") }}" />
+{% if image_type %}</div>{% endif %}

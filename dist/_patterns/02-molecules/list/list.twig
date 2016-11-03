@@ -1,0 +1,13 @@
+<ul{% if list_class %} class="{{ list_class }}"{% endif %}>
+	{% for item in list_array %}
+	<li>
+	{% if item.type|raw == "basic" %}
+		{% if item.url %}<a href="{{ item.url }}">{% endif %}{{ item.name }}{% if item.url %}</a>{% endif %}
+	{% elseif item.type %}
+		{% if item.url %}<a href="{{ item.url }}">{% endif %}
+			{% if item.type_attributes %}{% include item.type ignore missing with item.type_attributes %}{% else %}{% include item.type ignore missing %}{% endif %}
+		{% if item.url %}</a>{% endif %}
+	{% endif %}
+	</li>
+	{% endfor %}
+</ul>

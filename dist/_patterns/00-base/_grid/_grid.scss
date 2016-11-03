@@ -1,0 +1,35 @@
+/* breakpoints */
+$mobile-large:400px;
+$tab: 720px;
+$tab-large: 880px;
+$desk: 1120px;
+$ex-wide: 1900px;
+/* max width of site column */
+$maxwidth: 1140px;
+$outerwidth: 1800px;
+
+$subnav-mobile:265px;
+$subnav-width:370px;
+
+$search-height:70px;
+
+$socialtabs-width:60px;
+
+$nav-sidebar-width:240px;
+$nav-promo-width:240px;
+$both-sidebar-width:#{$nav-sidebar-width+$nav-promo-width};
+
+.sg-tabs,
+.sg-pattern-title a,
+.sg-pattern-lineage
+{
+	font-size:200%!important;
+}
+div[id^=viewall-base-_]{
+	display:none;
+}
+#atoms-image-centered .sg-pattern-example,
+#atoms-image-fixedy .sg-pattern-example{
+	width:300px;
+	height:300px;
+}

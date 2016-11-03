@@ -1,0 +1,26 @@
+<div class="news_article{% if news_type %} {{ news_type }}{% endif %}">
+	{% if news_type == "short" %}
+	<div class='news-container'>
+		<a href="#">
+			{% include 'atoms-date' %}
+			{% if news_title %}{% include "atoms-header" with {'header_class':'','header_title':news_title} %}{% else %}{% include "atoms-header" %}{% endif %}
+		</a>
+	</div>
+	{% elseif news_type == "overlay" %}
+	<a href="#">
+		{% include 'atoms-image' %}
+		{% if news_cats %} {% include 'molecules-list' with {'list_array': news_cats,'list_class':'categories'} %}{% endif %}
+		<div class='news-container'>
+			{% if news_title %}{% include "atoms-header" with {'header_class':'','header_title':news_title} %}{% else %}{% include "atoms-header" %}{% endif %}
+		</div>
+	</a>
+	{% else %}
+		<div class='news-container'>
+			{% include 'atoms-image' %}
+			{% if news_cats %} {% include 'molecules-list' with {'list_array': news_cats,'list_class':'categories'} %}{% endif %}
+			{% if news_title %}{% include "atoms-header" with {'header_class':'','header_title':news_title} %}{% else %}{% include "atoms-header" %}{% endif %}
+			{% include 'atoms-date' %}
+			{% if news_text %}{% include "atoms-text" with {'text':news_text} %}{% else %}{% include "atoms-text" %}{% endif %}
+		</div>
+	{% endif %}
+</div>

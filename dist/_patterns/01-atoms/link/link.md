@@ -1,0 +1,1 @@
+Generic link element. Use "link_class" to get different attributes built in such as "btn" or "dark".

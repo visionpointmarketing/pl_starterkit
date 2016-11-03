@@ -1,0 +1,30 @@
+h1,.h1{
+	@include font('open_sans_bold',36,$c-default);
+	margin:0 0 20px 0;
+	@include breakpoint($tab){
+		font-size:48px;
+		line-height:54px;
+	}
+}
+h2,.h2{
+	@include font('open_sans_bold',28,$c-default);
+	margin:0 0 20px 0;
+}
+h3,.h3{
+	@include font('open_sans_bold',24,$c-default);
+	line-height:24px;
+	margin:0 0 20px 0;
+}
+h4,.h4{
+	@include font('open_sans',20,$c-default);
+	margin:0 0 10px 0;
+}
+h5,.h5{
+	@include font('open_sans',18,$c-default);
+	font-weight:bold;
+	margin:0 0 10px 0;
+}
+h6,.h6{
+	@include font('open_sans',18,$c-default);
+	margin:0 0 10px 0;
+}

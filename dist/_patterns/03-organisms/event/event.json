@@ -1,0 +1,8 @@
+{
+  "date_format":"containers",
+  "event_type":"basic",
+  "event_class":"round",
+  "event_title":"Event Title",
+  "event_text":"Lorem Ipsum Dolor sit amet.",
+  "event_url":"#"
+}

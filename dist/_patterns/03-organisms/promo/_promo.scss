@@ -1,0 +1,86 @@
+.p-promo{
+	@include floatblock();
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:2px solid $dk-gray;
+	> .item{
+		img{
+			max-width:100%;
+		}
+	}
+	> .promo-container{
+		background:$white;
+		width:auto;
+		@include floatblock();
+		h2{
+			@include font('open_sans',18,$color-1);
+			border-bottom:0;
+			margin-top:10px;
+		}
+		p{
+			font-size:16px;
+			line-height:22px;
+			overflow:hidden;
+		}
+	}
+	&.right{
+		> .item{
+			@include breakpoint($tab){
+				width:30%;
+				padding-left:20px;
+			}
+			float:right;
+		}
+		> .promo-container{
+			@include breakpoint($tab){
+				width:70%;
+				h2{
+					margin-top:0;
+				}
+			}
+		}
+	}
+	&.left{
+		> .item{
+			@include breakpoint($tab){
+				width:30%;
+				padding-right:20px;
+			}
+			float:left;
+		}
+		> .promo-container{
+			@include breakpoint($tab){
+				width:70%;
+				h2{
+					margin-top:0;
+				}
+			}
+		}
+	}
+	&.hover{
+		padding:10px;
+		border:1px solid $color-2;
+		margin-top:0;
+		.item{
+			margin:auto;
+		}
+		.promo-container{
+			background:$white;
+			h2{
+				text-transform:none;
+				margin:10px 0 0;
+				border-bottom:0;
+			}
+			p{
+				font-size:16px;
+				line-height:22px;
+				overflow:hidden;
+			}
+		}
+		&:hover{
+			transition:all 0.1s ease-in-out;
+			border-top:5px solid $color-2;
+			margin-bottom:16px;
+		}
+	}
+}

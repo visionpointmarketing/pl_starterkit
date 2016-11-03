@@ -1,0 +1,253 @@
+.promo-event{
+	margin-bottom:10px;
+	a{
+		margin:auto;
+		text-align:center;
+		max-width:100%;
+		display:table;
+		.date{
+			display:table-cell;
+			float:none;
+			vertical-align:middle;
+			width:100px;
+			padding:10px 0px;
+			position:relative;
+			.weekday,
+			.month,
+			.day{
+				@include font('open_sans',16,$c-default);
+				@include floatblock(left,auto);
+				line-height:1;
+				padding:0 5px;
+			}
+		}
+		.info{
+			display:table-cell;
+			float:none;
+			vertical-align:middle;
+			@include calc('width','100% - 100px','75%');
+			h3{
+				@include font('open_sans_reg',20,$color-1);
+				@include floatblock();
+				padding:0 10px;
+				line-height:20px;
+				text-align:left;
+				border-bottom:none;
+				margin:0;
+			}
+			p{
+				@include font('open_sans',16,$c-default);
+				@include floatblock();
+				margin:0;
+				text-align:left;
+				padding:0 10px;
+			}
+		}
+		&:hover{
+			text-decoration:none;
+		}
+	}
+	&.basic{
+		a{
+			width:100%;
+			.info{
+				width:100%;
+				h3,
+				.date,
+				p{
+					padding:0;
+				}
+			}
+		}
+	}
+	&.wide{
+		a{
+			.date{
+				background:$color-1;
+				.weekday,
+				.month,
+				.day{
+					width:51%;
+					padding:0;
+				}
+				.weekday{
+					color:$color-2;
+					text-transform:uppercase;
+				}
+				.month{
+					color:$white;
+					text-transform:uppercase;
+					@include font-size(20,1);
+				}
+				.day{
+					@include font-size(42,1);
+					color:$white;
+					@include calc('top','50% - 21px','50%');
+					position:absolute;
+					right:5px;
+				}
+			}
+			.info{}
+		}
+	}
+	&.tall{
+		a{
+			.date{
+				width:50px;
+				padding:20px 10px;
+				background:$color-1;
+				.weekday,
+				.month,
+				.day{
+					width:100%;
+					line-height:1;
+					color:$white;
+				}
+				.weekday{
+					@include font-size(18,1);
+					padding-bottom:2px;
+				}
+				.month{
+					@include font-size(20,1);
+					padding-bottom:5px;
+				}
+				.day{
+					position:relative;
+					top:auto;
+					right:auto;
+					@include font-size(38,1);
+				}
+			}
+			.info{
+				@include calc('width','100% - 50px','75%');
+			}
+		}
+	}
+	&.round{
+		a{
+			.date{
+				width:80px;
+				padding-bottom:0;
+				background:none;
+				.weekday,
+				.month,
+				.day{
+					width:100%;
+					line-height:1;
+				}
+				.weekday{
+					font-size:18px;
+					color:$color-1;
+				}
+				.month{
+					font-size:24px;
+					color:$color-1;
+				}
+				.day{
+					position:relative;
+					color:$white;
+					top:auto;
+					right:auto;
+					font-size:40px;
+					width:80px;
+					background:$color-1;
+					border-radius:50%;
+					padding:20px 20px 20px 17px;
+					margin-top:10px;
+				}
+			}
+			.info{
+				@include calc('width','100% - 80px','75%');
+			}
+		}
+	}
+	&.generic{
+		a{
+			.date{
+				width:auto;
+				padding-right:10px;
+				background:$color-2;
+				margin:0 0 10px 10px;
+				.weekday,
+				.month,
+				.day{
+					width:auto;
+					position:relative;
+					background:none;
+					color:$color-1;
+					left:0;
+					right:0;
+					font-size:18px;
+					line-height:1;
+					padding-left:10px;
+				}
+			}
+			.info{
+				width:auto;
+			}
+		}
+	}
+	&.overlay{
+		height:100px;
+		box-shadow: 0 0 2px $black-tl;
+		@include breakpoint($tab){
+			height:200px;
+		}
+		margin:0 -15px 15px 0;
+		a{
+			display:block;
+			background:$color-1;
+			height:100%;
+			transition:all 0.3s ease-in-out;
+			.date{
+				@include font('open_sans_xbold',25,$color-2);
+				display:block;
+				float:left;
+				width:100%;
+				text-align:left;
+				padding:0 10px;
+				padding:10px 20px 0 20px;
+			}
+			h3{
+				@include font('open_sans_bold',20,$white);
+				padding:0 20px;
+			}
+			p{
+				@include font('open_sans',14,$c-default);
+				padding:0 20px;
+				display:none;
+			}
+			&:hover,
+			&:focus{
+				background:$white;
+				.date{
+					color:$color-1;
+				}
+				h3{
+					display:none;
+				}
+				p{
+					display:block;
+				}
+			}
+		}
+	}
+	&.short{
+		a{
+			text-align:left;
+			width:100%;
+			margin:10px 0;
+			color:$c-default;
+			h3{
+				@include font('open_sans_bold',14,$c-default);
+				margin:0;
+			}
+			span{
+				@include font('open_sans',14,$c-default);
+			}
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+}

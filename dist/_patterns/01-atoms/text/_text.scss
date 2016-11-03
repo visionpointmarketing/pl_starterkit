@@ -1,0 +1,12 @@
+
+p{
+	float:none;
+	@include font('open_sans',18,$c-default);
+	margin:10px 0;
+	a{
+		display:inline-block;
+		float:none;
+		width:auto;
+		text-decoration:underline;
+	}
+}

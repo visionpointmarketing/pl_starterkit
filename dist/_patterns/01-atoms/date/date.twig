@@ -1,0 +1,11 @@
+{% if date_format == "basic" %}
+	<p class="date">{{ "now"|date("M d, Y") }}</p>
+{% elseif date_format == "containers" %}
+	<div class='date'>
+		<div class='weekday'>{{ "now"|date("D")}}</div>
+		<div class='month'>{{ "now"|date("M")}}</div>
+		<div class='day'>{{ "now"|date("d")}}</div>
+	</div>
+{% elseif date_format == "overlay" %}
+	<p class='date'>{{ "now"|date("M d") }}</p>
+{% endif %}

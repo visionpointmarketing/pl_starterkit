@@ -1,0 +1,1 @@
+Placeholder image that can be overwritten with a URL using the "image_src" attribute. Add an "image_type" class for a wrapper to center and crop upon.

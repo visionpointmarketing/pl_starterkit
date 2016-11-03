@@ -1,0 +1,13 @@
+<div class='promo-event {{ event_type }}{% if event_class %} {{ event_class }}{% endif %}'>
+	{% if event_url %}<a href='{{ event_url }}'>{% endif %}
+		<div class='info'>
+			{% if event_title %}{% include "atoms-header" with {'header_type':'3','header_class':'','header_title':event_title} %}{% else %}{% include "atoms-header" %}{% endif %}
+			{% if event_type == "basic" %}
+				{% include 'atoms-date' %}
+			{% elseif event_type == "overlay" %}
+				{% include 'atoms-date' %}
+			{% endif %}
+			{% if events_text %}{% include "atoms-text" with {'text':events_text} %}{% else %}{% include "atoms-text" %}{% endif %}
+		</div>
+	{% if event_url %}</a>{% endif %}
+</div>

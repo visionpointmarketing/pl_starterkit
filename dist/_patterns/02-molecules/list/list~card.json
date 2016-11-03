@@ -1,0 +1,20 @@
+{
+  "list_array":{
+    "1":{
+      "name":"test1",
+      "type":"organisms-card",
+      "type_attributes":{
+        "card_component":"molecules-readmore",
+        "link_text":"Learn More test"
+      }
+    },
+    "2":{
+      "name":"test2",
+      "type":"organisms-card",
+      "type_attributes":{
+        "card_component":"molecules-readmore",
+        "link_text":"Learn More test"
+      }
+    } 
+  }
+}

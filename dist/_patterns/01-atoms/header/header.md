@@ -1,0 +1,1 @@
+h1 through h6 elements can be selected by setting the level (ex, "2") in the "header_type" attribute
