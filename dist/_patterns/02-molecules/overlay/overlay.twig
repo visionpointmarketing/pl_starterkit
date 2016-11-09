@@ -1,0 +1,11 @@
+<div class='overlay{% if overlay_type %} {{ overlay_type }}{% endif %}'>
+{% if overlay_url %}<a href='{{ overlay_url }}'>{% endif %}
+	<div class='item'>{% if overlay_pattern_attributes %}{% include overlay_pattern ignore missing with overlay_pattern_attributes %}{% else %}{% include overlay_pattern ignore missing %}{% endif %}</div>
+	<div class='overlay-wrapper'>
+		<div class='overlay-container'>
+			{% if overlay_title %}{% include "atoms-header" with {'header_class':'','header_title':overlay_title} %}{% else %}{% include "atoms-header" %}{% endif %}
+			{% if overlay_text %}{% include "atoms-text" with {'text':overlay_text} %}{% else %}{% include "atoms-text" %}{% endif %}
+		</div>
+	</div>
+{% if overlay_url %}</a>{% endif %}
+</div>

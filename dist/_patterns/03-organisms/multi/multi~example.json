@@ -1,0 +1,17 @@
+{
+	"multi":{
+		"0":{
+			"pattern":"atoms-text"
+		},
+		"1":{
+			"pattern":"atoms-link",
+			"pattern_attributes":{
+				"link_class":"btn dark",
+				"link_icon":"facebook"
+			}
+		},
+		"2":{
+			"pattern":"atoms-image"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+<div class="p-promo{% if promo_class %} {{ promo_class }}{% endif %}">
+	<div class="item">
+		{% if promo_pattern_attributes %}{% include promo_pattern ignore missing with promo_pattern_attributes %}{% else %}{% include promo_pattern ignore missing %}{% endif %}
+	</div>
+	<div class="promo-container">
+		{% if promo_title %}{% include "atoms-header" with {'header_class':'','header_title':promo_title} %}{% else %}{% include "atoms-header" %}{% endif %}
+		{% if promo_text %}{% include "atoms-text" with {'text':promo_text} %}{% else %}{% include "atoms-text" %}{% endif %}
+	</div>
+</div>

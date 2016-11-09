@@ -1,0 +1,137 @@
+@import "../_patterns/**/*";
+
+html {
+	font-size: 50%;
+	@include breakpoint($tab-large){
+		font-size: 55%;
+	}
+	@include breakpoint($desk){
+		font-size: 62.5%;
+	}
+}
+body{
+	*{
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	script{
+		display:none;
+	}
+	&.home{
+		h1{
+			margin:0;
+		}
+	}
+}
+hr{
+	@include floatblock();
+}
+section{
+	@include floatblock();
+	margin:20px 0;
+	position:relative;
+	@include breakpoint($tab){
+		margin-top:0px;
+	}
+	&.short{
+		max-height:300px;
+		overflow:hidden;
+		.view-more{
+			@include font('open_sans',16,$color-1);
+			@include arrow('after',$color-1,12,"\f067");
+			position:absolute;
+			background:$white;
+			&:after{
+				right:0;
+			}
+		}
+	}
+	.view-more{
+		@include font('open_sans',16,$color-1);
+		@include arrow('after',$color-1,12,"\f068");
+		display:block;
+		bottom:-4px;
+		width:100%;
+		text-align:right;
+		padding-right:12px;
+		&:after{
+			right:0;
+		}
+	}
+}
+#main-content{
+	outline:none!important;
+	min-height:100vh;
+}
+.caption{
+	max-width:100%;
+	width:auto;
+	p{
+		@include floatblock();
+		color:$color-1;
+		font-style:italic;
+		margin:0 0 15px 0;
+		border-bottom:1px solid $color-2;
+		padding:10px 0;
+	}
+	img{
+		width:100%;
+	}
+}
+.user-editable{
+	h1,h2,h3,h4,h5,h6{
+		width:auto;
+	}
+}
+.back-to-top{
+	display:none;
+	right:20px;
+	bottom:20px;
+	background:$color-1;
+	border: 3px solid $color-2;
+	border-radius:50%;
+	@include arrowdown($color-2,30);
+	position:fixed;
+	height:60px;
+	width:60px;
+	z-index:9999;
+	color:$color-2;
+	text-transform:uppercase;
+	font-size:12px;
+	line-height:12px;
+	text-align:center;
+	padding:24px 0 0 0;
+	&:after{
+		-webkit-transform:rotateZ(-90deg);
+		-ms-transform:rotateZ(-90deg);
+		transform: rotateZ(-90deg);
+		padding:0 13px;
+		top:8px;
+		left:7px;
+	}
+	&:hover{
+		text-decoration:none;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	input[type='text'],
+	input[type='number'],
+	textarea {
+		font-size: 16px!important;
+	}
+	strong{
+		font-weight:bold;
+	}
+}
+.visuallyhidden,
+.sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}

@@ -1,0 +1,19 @@
+{
+	"promo_class":"left hover",
+	"promo_pattern":"organisms-multi",
+	"promo_pattern_attributes":{
+		"multi":{
+			"0":{
+				"pattern":"atoms-text"
+			},
+			"2":{
+				"pattern":"atoms-link",
+				"pattern_attributes":{
+					"link_class":"btn dark"
+				}
+			}
+		}
+	},
+	"promo_title":"promo title",
+	"promo_text":"promo text"
+}

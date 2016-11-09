@@ -1,0 +1,1 @@
+The multi molecule joins multiple patterns into one for inclusion in other patterns that require one pattern.
