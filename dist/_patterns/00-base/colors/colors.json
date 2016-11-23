@@ -1,0 +1,29 @@
+{
+	"colors_title":"Brand Colors",
+	"colors_list":{
+		"0":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"color-1"
+			}
+		},
+		"1":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"color-2"
+			}
+		},
+		"2":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"color-3"
+			}
+		},
+		"3":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"color-4"
+			}
+		}
+	}
+}

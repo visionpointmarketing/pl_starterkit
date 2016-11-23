@@ -1,4 +1,4 @@
 <label for="{{ input_id }}">
-	{{ input_label }}
+	<span {% if input_label_hidden %} class="sr-only"{% endif %}>{{ input_label }}</span>
 	<input aria-label="{{ input_label }}" data-parsley-trigger="change" id="{{ input_id }}" type="{{ input_type }}" placeholder="{{ input_label }}" />
 </label>

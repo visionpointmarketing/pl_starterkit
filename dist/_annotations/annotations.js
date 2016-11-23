@@ -1,9 +1,9 @@
 {
   "comments" : [
     {
-      "el": "#annotation-css-selector",
-      "title" : "Annotation title",
-      "comment": "Annotation description"
+      "el": ".promo-event.round .date",
+      "title" : "Round Date",
+      "comment": "this uses the round version of the atom-date"
     }
   ]
 }

@@ -1,4 +1,5 @@
 {
+	"multi_type":"list",
 	"multi":{
 		"0":{
 			"pattern":"atoms-text"

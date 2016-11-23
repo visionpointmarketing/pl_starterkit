@@ -1,0 +1,20 @@
+{% if multi_type == 'list' %}
+	{% for item in multi %}
+		{% if item.pattern_attributes %}
+			{% include item.pattern ignore missing with item.pattern_attributes %}
+		{% else %}
+			{% include item.pattern ignore missing %}
+		{% endif %}
+	{% endfor %}
+{% elseif multi_type == 'duplicate' %}
+	{% if multi_number %}
+		{% set k = multi_number %}
+		{% for i in range(1,k) %}
+			{% if pattern_attributes %}
+				{% include pattern ignore missing with pattern_attributes %}
+			{% else %}
+				{% include pattern ignore missing %}
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+{% endif %}

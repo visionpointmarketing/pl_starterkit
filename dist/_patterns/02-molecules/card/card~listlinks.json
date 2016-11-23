@@ -1,12 +1,12 @@
 {
-  "card_pattern":"organisms-multi",
+  "card_pattern":"molecules-multi",
   "card_pattern_attributes":{
     "multi":{
       "0":{
         "pattern":"atoms-text"
       },
       "1":{
-        "pattern":"organisms-list",
+        "pattern":"molecules-list",
         "pattern_attributes":{
           "list_array":{
             "1":{

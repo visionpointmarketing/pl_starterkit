@@ -1,0 +1,9 @@
+<div class="reveal{% if reveal_class %} {{ reveal_class }}{% endif %}">
+	<div class="item">
+		{% if reveal_pattern_attributes %}{% include reveal_pattern ignore missing with reveal_pattern_attributes %}{% else %}{% include reveal_pattern ignore missing %}{% endif %}
+	</div>
+	<a href="">
+		{% if reveal_title %}{% include "atoms-header" with {'header_class':'','header_title':reveal_title} %}{% else %}{% include "atoms-header" %}{% endif %}
+		{% if reveal_text %}{% include "atoms-text" with {'text':reveal_text} %}{% else %}{% include "atoms-text" %}{% endif %}
+	</a>
+</div>

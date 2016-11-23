@@ -1,0 +1,13 @@
+.date{
+	@include floatblock();
+	padding:10px 0px;
+	position:relative;
+	.weekday,
+	.month,
+	.day{
+		@include font('open_sans',16,$c-default);
+		line-height:1;
+		@include floatblock(left,auto);
+		padding:0 5px;
+	}
+}

@@ -4,7 +4,7 @@
       "name":"test1",
       "type":"molecules-card",
       "type_attributes":{
-        "card_pattern":"organisms-multi",
+        "card_pattern":"molecules-multi",
         "card_pattern_attributes":{
           "multi":{
             "0":{
@@ -24,7 +24,7 @@
       "name":"test2",
       "type":"molecules-card",
       "type_attributes":{
-        "card_pattern":"organisms-multi",
+        "card_pattern":"molecules-multi",
         "card_pattern_attributes":{
           "multi":{
             "0":{

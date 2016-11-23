@@ -1,0 +1,9 @@
+{
+	"multi_type":"duplicate",
+	"multi_number":"4",
+	"pattern":"atoms-link",
+	"pattern_attributes":{
+        "link_text":"Cat",
+        "link_class":"tag"
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"table_class":"responsive",
+	"table_head":{
+		"0":"First Name",
+		"1":"Last Name",
+		"2":"Enrolled",
+		"3":"Resume"
+	},
+	"table_rows":{
+		"0":{
+			"0":"John",
+			"1":"Smith",
+			"2":"<span class='fa fa-check'></span>",
+			"3":"<a href='sample.doc'>DOC</a>"
+		},
+		"1":{
+			"0":"Tim",
+			"1":"Jones",
+			"2":"",
+			"3":"<a href='sample.pdf'>file</a>"
+		},
+		"2":{
+			"0":"Jane",
+			"1":"Doe",
+			"2":"<span class='fa fa-check'></span>",
+			"3":"not available"
+		},
+		"3":{
+			"0":"Jane",
+			"1":"Doe",
+			"2":"",
+			"3":"<a href='sample.doc'>DOC</a>"
+		}
+	}
+}

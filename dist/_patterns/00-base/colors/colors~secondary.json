@@ -1,0 +1,35 @@
+{
+	"colors_title":"Secondary Colors",
+	"colors_list":{
+		"0":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"red"
+			}
+		},
+		"1":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"blue"
+			}
+		},
+		"2":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"green"
+			}
+		},
+		"3":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"yellow"
+			}
+		},
+		"4":{
+			"type":"base-swatch",
+			"type_attributes":{
+				"swatch_name":"purple"
+			}
+		}
+	}
+}

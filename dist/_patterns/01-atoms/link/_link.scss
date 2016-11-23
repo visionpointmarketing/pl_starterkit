@@ -3,6 +3,7 @@ $light_background:$color-2;
 $font_fam:'open_sans';
 $icon-size:20px;
 a{
+	@include font($font_fam,16,$dark_background);
 	&.skip{
 		position:absolute!important;
 		clip:rect(1px,1px,1px,1px);
@@ -52,7 +53,6 @@ a{
 	@include focus_styles();
 	&.btn{
 		@include floatblock(left,auto);
-		@include font($font_fam,16,$dark_background);
 		background:#eee;
 		padding: 15px 25px;
 		border:1px solid $gray;

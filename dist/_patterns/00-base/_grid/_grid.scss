@@ -18,18 +18,3 @@ $socialtabs-width:60px;
 $nav-sidebar-width:240px;
 $nav-promo-width:240px;
 $both-sidebar-width:#{$nav-sidebar-width+$nav-promo-width};
-
-.sg-tabs,
-.sg-pattern-title a,
-.sg-pattern-lineage
-{
-	font-size:200%!important;
-}
-div[id^=viewall-base-_]{
-	display:none;
-}
-#atoms-image-centered .sg-pattern-example,
-#atoms-image-fixedy .sg-pattern-example{
-	width:300px;
-	height:300px;
-}

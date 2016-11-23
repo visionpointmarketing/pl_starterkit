@@ -1,6 +1,7 @@
-/* default color for text */
+/* default color */
 $c-default:#444;
 
+/* weights */
 $lw:0.25;
 $mw:0.6;
 $hw:0.9;
@@ -8,16 +9,16 @@ $hw:0.9;
 $white-tl:rgba(255,255,255,$lw);
 $white-t:rgba(255,255,255,$mw);
 $white-th:rgba(255,255,255,$hw);
-$white:#fff;
-$off-white:#efeae1;
+$white:rgba(255,255,255,1);
 
+$off-white:#efeae1;
 $lt-gray:#ccc;
 $gray:#999;
 $md-gray:#666;
 $dk-gray:#333;
-
 $off-black:#111;
-$black:#000;
+
+$black:rgba(0,0,0,1);
 $black-tl:rgba(0,0,0,$lw);
 $black-t:rgba(0,0,0,$mw);
 $black-th:rgba(0,0,0,$hw);
@@ -37,40 +38,34 @@ $purple-t:purple;
 $dk:$black-t;
 $lt:$black-tl;
 
-$r1:42;
-$g1:42;
-$b1:42;
+$r1:58;
+$g1:74;
+$b1:143;
 $color-1:rgba($r1,$g1,$b1,1);
 $color-1-tl:rgba($r1, $g1, $b1, $lw);
 $color-1-t:rgba($r1, $g1, $b1, $mw);
 $color-1-th:rgba($r1,$g1,$b1,$hw);
 
-$r2:187;
-$g2:187;
-$b2:187;
+$r2:42;
+$g2:150;
+$b2:172;
 $color-2: rgba($r2,$g2,$b2,1);
 $color-2-tl:rgba($r2,$g2,$b2,$lw);
 $color-2-t:rgba($r2,$g2,$b2,$mw);
 $color-2-th:rgba($r2,$g2,$b2,$hw);
 
-$r3:70;
-$g3:135;
-$b3:195;
+$r3:250;
+$g3:97;
+$b3:46;
 $color-3: rgba($r3,$g3,$b3,1);
 $color-3-tl:rgba($r3,$g3,$b3,$lw);
 $color-3-t:rgba($r3,$g3,$b3,$mw);
 $color-3-th:rgba($r3,$g3,$b3,$hw);
 
-$r4:170;
-$g4:145;
-$b4:105;
+$r4:23;
+$g4:23;
+$b4:23;
 $color-4: rgba($r4,$g4,$b4,1);
 $color-4-tl:rgba($r4,$g4,$b4,$lw);
 $color-4-t:rgba($r4,$g4,$b4,$mw);
 $color-4-th:rgba($r4,$g4,$b4,$hw);
-
-
-$brand-1:$gray;
-$brand-2:$dk-gray;
-$brand-3:$blue;
-$brand-4:$purple;

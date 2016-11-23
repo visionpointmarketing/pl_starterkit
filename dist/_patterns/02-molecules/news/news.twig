@@ -8,18 +8,17 @@
 	</div>
 	{% elseif news_type == "overlay" %}
 	<a href="#">
-		{% include 'atoms-image' %}
-		{% if news_cats %} {% include 'organisms-list' with {'list_array': news_cats,'list_class':'categories'} %}{% endif %}
+		{% include 'atoms-image' with {'image_type':'image-centered'} %}
 		<div class='news-container'>
 			{% if news_title %}{% include "atoms-header" with {'header_class':'','header_title':news_title} %}{% else %}{% include "atoms-header" %}{% endif %}
 		</div>
 	</a>
 	{% else %}
+		{% include 'atoms-image' %}
 		<div class='news-container'>
-			{% include 'atoms-image' %}
-			{% if news_cats %} {% include 'organisms-list' with {'list_array': news_cats,'list_class':'categories'} %}{% endif %}
 			{% if news_title %}{% include "atoms-header" with {'header_class':'','header_title':news_title} %}{% else %}{% include "atoms-header" %}{% endif %}
 			{% include 'atoms-date' %}
+			{% if news_cats %} {% include 'molecules-list' with {'list_array': news_cats,'list_class':'categories'} %}{% endif %}
 			{% if news_text %}{% include "atoms-text" with {'text':news_text} %}{% else %}{% include "atoms-text" %}{% endif %}
 		</div>
 	{% endif %}

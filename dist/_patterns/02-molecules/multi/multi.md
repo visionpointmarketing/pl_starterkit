@@ -1,0 +1,1 @@
+The multi molecule joins multiple patterns into one for inclusion in other patterns that require one pattern. Choose the "duplicate" option to create multiple of the same item. Chooose the "list" option to create specific items contained in the json list.

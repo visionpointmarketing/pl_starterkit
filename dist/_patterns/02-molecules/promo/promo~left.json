@@ -1,6 +1,6 @@
 {
 	"promo_class":"left hover",
-	"promo_pattern":"organisms-multi",
+	"promo_pattern":"molecules-multi",
 	"promo_pattern_attributes":{
 		"multi":{
 			"0":{

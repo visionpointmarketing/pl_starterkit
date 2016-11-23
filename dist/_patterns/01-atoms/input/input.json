@@ -1,4 +1,6 @@
 {
 	"input_type":"text",
-	"input_id":"name"
+	"input_id":"name",
+	"input_label":"Full Name",
+	"input_label_hidden":true
 }

@@ -169,10 +169,7 @@
 					position:absolute;
 					bottom:50px;
 					left:50px;
-					@include calc('width','100% - 100px','100%');
-				}
-				@include breakpoint($desk){
-					@include calc('width','75% - 100px','60%');
+					@include calc('max-height','100% - 100px','100%');
 				}
 				p{
 					@include font('open_sans',16,$white);
@@ -182,7 +179,7 @@
 					margin:0;
 				}
 				h2{
-					@include font(''open_sans_bold'',16,$white);
+					@include font('open_sans_bold',16,$white);
 					padding:20px 20px 0 20px;
 					margin:0;
 					border-bottom:0;
@@ -192,7 +189,7 @@
 						.drop-container{
 							width:100%;
 							.dropdown{
-								@include font(''open_sans_bold'',22,$color-1);
+								@include font('open_sans_bold',22,$color-1);
 								line-height:22px;
 								width:100%;
 								text-align:left;
@@ -227,6 +224,7 @@
 		}
 		&.left{
 			.overlay-wrapper{
+				left:0;
 				.overlay-container{
 					width:50%;
 				}

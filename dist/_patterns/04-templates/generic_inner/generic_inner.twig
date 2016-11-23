@@ -1,0 +1,55 @@
+{#
+	region blocks on this template:
+	 featured_header
+	 content_header
+	 nav_sidebar
+	 content_featured
+	 content
+	 promo_sidebar
+	 content_footer
+#}
+<div class="page" id="page">
+    {% include "organisms-header" %}
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+        		{% block featured_header %}{% endblock %}
+			</div>
+		</div>
+	</div>
+    <div class="l-page container" role="main">
+    	<div class="row">
+			<div class="col-sm-12">
+       		{% block content_header %}{% endblock %}
+       		</div>
+       	</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-lg-3 nav-sidebar">
+       					{% block nav_sidebar %}{% endblock %}
+		       		</div>
+		       		<div class="col-lg-9">
+		       			{% block content_featured %}{% endblock %}
+		       		</div>
+		       		<div class="col-lg-9 pull-right">					
+		       			<div class="row">
+							<div class="col-md-9 l-content">
+		       					{% block content %}{% endblock %}
+							</div>
+							<div class="col-md-3 promo-sidebar">
+		       					{% block promo_sidebar %}{% endblock %}
+							</div>
+				       	</div>
+		       		</div>
+		       	</div>
+       		</div>
+       	</div>
+		<div class="row">
+			<div class="col-sm-12">
+		       	{% block content_footer %}{% endblock %}
+			</div>
+		</div>
+    </div>
+    {% include "organisms-footer" %}
+</div>

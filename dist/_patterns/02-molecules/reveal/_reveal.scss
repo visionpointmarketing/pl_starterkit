@@ -1,0 +1,95 @@
+.reveal{
+	position:relative;
+	@include floatblock();
+	.item{
+		border:1px solid $white;
+		img{
+			width:100%;
+		}
+	}
+	a{
+		background:$black-t;
+		position:absolute;
+		overflow:hidden;
+		@include breakpoint($tab){
+			background:none;
+		}
+		@include floatblock();
+		padding:0;
+		height:100%;
+		transition:all 0.2s;
+		top:0;
+		&:hover{
+			background:none;
+			h2{
+				bottom:auto;
+				top:20%;
+				color:$c-default;
+				@include breakpoint($tab){
+					top:10%;
+				}
+				@include breakpoint($tab-large){
+					top:20%;
+				}
+			}
+			p{
+				bottom:10%;
+				&:after{
+					content:'';
+				}
+			}
+			@include arrowdown($c-default,16);
+			position:absolute;
+			&:after{
+				font-size:28px;
+				@include calc('left','50% - 14px','50%');
+				top:90%;
+			}
+		}
+		h2{
+			color:$white;
+			bottom:auto;
+			@include floatblock();
+			position:absolute;
+			text-align:center;
+			padding:0 20px;
+			text-shadow:1px 1px 3px $black-t;
+			border:none;
+			text-transform:none;
+			transition:all 0.2s;
+			top:20%;
+			@include breakpoint($tab,true){
+				bottom:20%;
+				font-size:20px;
+				line-height:26px;
+				top:auto;
+			}
+			@include breakpoint($desk,true){
+				font-size:28px;
+				line-height:32px;
+			}
+		}
+		p{
+			position:absolute;
+			bottom:10%;
+			width:100%;
+			background:none;
+			text-transform:none;
+			text-shadow:1px 1px 3px $black-t;
+			padding:0 20px;
+			transition:all 0.2s;
+			text-align:center;
+			&:after{
+				content:'';
+			}
+			@include breakpoint($tab){
+				bottom:-100%;
+				font-size:14px;
+				line-height:18px;
+			}
+			@include breakpoint($tab-large){
+				font-size:16px;
+			}
+		}
+	}
+}

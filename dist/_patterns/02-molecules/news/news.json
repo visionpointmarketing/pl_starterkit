@@ -6,21 +6,24 @@
       "name":"test",
       "type":"atoms-link",
       "type_attributes":{
-        "link_text":"Cat1"
+        "link_text":"Cat1",
+        "link_class":"tag"
       }
     },
     "2":{
       "name":"test 2",
       "type":"atoms-link",
       "type_attributes":{
-        "link_text":"Cat2"
+        "link_text":"Cat2",
+        "link_class":"tag"
       }
     },
     "3":{
       "name":"test 2",
       "type":"atoms-link",
       "type_attributes":{
-        "link_text":"Cat3"
+        "link_text":"Cat3",
+        "link_class":"tag"
       }
     }
   }
